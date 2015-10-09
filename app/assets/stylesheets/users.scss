@@ -1,0 +1,28 @@
+// Place all the styles related to the users controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+.register-box{
+  margin-left:35%;
+  margin-top: 150px;
+  background-color: #000000;
+  opacity:0.5;
+  height:400px;
+  width: 400px;
+  box-shadow: 1px 1px 2px ;
+  border-radius:10px;
+}
+
+.register-box form {
+  padding-top: 60px;
+  color: #DADADA;
+  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  text-align:right;
+  padding-right: 80px;
+}
+
+.register-box form input{
+  height: 20px;
+  border-radius: 5px;
+  margin-left: 10px;
+  margin-bottom: 40px;
+}

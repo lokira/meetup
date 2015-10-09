@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component name="dataSourceStorage">
+  <data-source source="LOCAL" name="Rails meetup: development" uuid="41fa1722-7877-4fb6-97ed-fbd03b18c4dd">
+    <database-info product="" version="" jdbc-version="" driver-name="" driver-version=""/>
+  </data-source>
+  <data-source source="LOCAL" name="Rails meetup: test" uuid="6ad33bbd-c70c-4f3a-9a59-3e004a925dff">
+    <database-info product="" version="" jdbc-version="" driver-name="" driver-version=""/>
+  </data-source>
+  <data-source source="LOCAL" name="Rails meetup: production" uuid="8251c1c0-20ef-40bf-96f8-9ba1ebb7db6a">
+    <database-info product="" version="" jdbc-version="" driver-name="" driver-version=""/>
+  </data-source>
+</component>

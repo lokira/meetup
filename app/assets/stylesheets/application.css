@@ -1,0 +1,66 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+
+.top-nav {
+    font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    height: 60px;
+    line-height: 28.5714302062988px;
+    color: #F7F7F7;
+    /*position: fixed;*/
+    width: 100%;
+}
+
+.top-nav .title {
+    font-weight: 800;
+    display: inline;
+}
+
+.top-nav ul{
+    list-style-type:none;
+    float: right;
+    display: inline;
+    margin:0em;
+}
+.top-nav li{
+    font-size: 15px;
+    display: inline;
+    margin-right: 20px;
+}
+.top-nav li a{
+    cursor: hand;
+    text-decoration: none;
+}
+
+.top-nav a:link,.top-nav a:visited{
+    text-decoration: none;
+    color: #F7F7F7;
+}
+
+.top-nav li a:hover{
+    color: #CCCCCC;
+}
+
+body {
+    background-image: url(../images/home-bg.jpg);
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-attachment:fixed;
+}
+
+#form{
+    /*padding-top: 60px;*/
+}
