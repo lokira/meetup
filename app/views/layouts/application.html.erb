@@ -2,8 +2,8 @@
 <html>
 <head>
   <title>Meetup</title>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%# = javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= stylesheet_link_tag    'application', media: 'all' %>
+  <%= javascript_include_tag 'application' %>
   <%= csrf_meta_tags %>
 </head>
 <body>
@@ -11,8 +11,13 @@
 <h1 class="title"><%= link_to :MEETUP, '/'%></h1>
 <ul>
   <li><%= link_to :ABOUT, '/about'%></li>
-  <li><%= link_to :LOGIN, '/about'%></li>
-  <li><%= link_to :SIGNUP, '/register'%></li>
+  <%if current_user %>
+      <li><%= link_to current_user.name, '#'%></li>
+      <li><%= link_to :LOGOUT, logout_path, {:method=>:delete}%></li>
+  <%else%>
+      <li><%= link_to :LOGIN, '/login'%></li>
+      <li><%= link_to :SIGNUP, '/register'%></li>
+  <%end%>
 </ul>
 </div>
 

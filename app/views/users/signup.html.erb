@@ -1,8 +1,14 @@
 <div class="register-box">
   <%= form_tag '/register' ,:method => :post do %>
       <div><%= label_tag 'NAME' %> <%= text_field_tag :username,'',:required=>true %></div>
-      <div><%= label_tag 'PASSWORD' %> <%= password_field :password,:size=>6,:required=>true %></div>
+      <div><%= label_tag 'PASSWORD' %> <%= password_field :password, :pwd,:required=>true %></div>
       <div><%= label_tag 'E-MAIL' %> <%= text_field_tag :email %></div>
       <div><%= submit_tag 'SIGN UP'%></div>
+      <%unless flash[:notice].nil?%>
+          <div class="notice-flash"> <%=flash[:notice]%> </div>
+      <%end%>
+      <%unless flash[:error].nil?%>
+          <div class="error-flash"> <%=flash[:error]%> </div>
+      <%end%>
   <% end %>
 </div>

@@ -64,3 +64,10 @@ body {
 #form{
     /*padding-top: 60px;*/
 }
+
+.error-flash{
+    color:orangered;
+}
+.notice-flash{
+    color:lawngreen;
+}
